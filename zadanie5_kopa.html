@@ -1,0 +1,31 @@
+<html> 
+    <head> 
+        <title>Kopacz 2KP</title> 
+        <script language="JavaScript"> 
+            function WinOpen_g1() { 
+                window.open("Część1.html", "win1", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=350,left=150"); 
+            } 
+            function WinOpen_g2() { 
+                window.open("Część2.html", "win2", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=260,left=280"); 
+            } 
+            function WinOpen_g3() { 
+                window.open("Część3.html", "win3", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=170,left=410"); 
+            } 
+            function WinOpen_g4() { 
+                window.open("Część4.html", "win4", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=80,left=540"); 
+            } 
+            function okno_zamknij() { 
+                window.close(); 
+            } 
+        </script> 
+    </head> 
+<body> 
+    <form> 
+        <input type="button" name="Część 1" value="grafika1" onclick="WinOpen_g1()">
+        <input type="button" name="Część 2" value="grafika2" onclick="WinOpen_g2()">
+        <input type="button" name="Część 3" value="grafika3" onclick="WinOpen_g3()"> 
+        <input type="button" name="Część 4" value="grafika4" onclick="WinOpen_g4()"> 
+        <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
+    </form> 
+</body> 
+</html>
