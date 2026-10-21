@@ -1,0 +1,38 @@
+   <html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+
+
+
+<html>
+<head>
+<title>Obliczanie odległości od drabiny i kąta</title>
+<script>
+function drabina_kopa() {
+var d_kopa = parseFloat(document.getElementsByName('d_dana_kopa')[0].value);
+var x_kopa = parseFloat(document.getElementsByName('x_dana_kopa')[0].value);
+var drabina_kopa = Math.sqrt(d_kopa*d_kopa+x_kopa*x_kopa);
+var alfa_kopa = Math.asin(d_kopa/drabina_kopa)*180/Math.PI;
+document.getElementsByName('drabina')[0].value = drabina_kopa.toFixed(2);
+document.getElementsByName('alfa')[0].value = alfa_kopa.toFixed(2);
+}
+</script>
+</head>
+<body>
+<legend>Obliczanie odległości od drabiny i kąta</legend>
+<form onsubmit="drabina_bla(); return false;">
+Podaj d= <input size="6" name="d_dana_kopa" >
+Podaj x= <input size="6" name="x_dana_kopa" >
+<br><br>
+<input type="submit" value="oblicz">
+<br><br><br>
+Drabina= <input size="6" name="drabina">
+Alfa= <input size="6" name="alfa">
+</form>
+
+</body>
+</html>
+
+     </textarea> 
+    </body> 
+</html> 
