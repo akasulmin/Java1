@@ -1,0 +1,32 @@
+<!DOCTYPE html>   
+<head>    
+<title> proste obliczenia</title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:red;font-size:50px;"> 
+<script language="JavaScript"> 
+var x1_kop=prompt("liczba1=",""); 
+var x2_kop=prompt("liczba2=",""); 
+var a=parseFloat(x1_kop); 
+var b=parseFloat(x2_kop); 
+var x1_kop_rad;
+var x2_kop_rad;
+var y1_kop;
+var y2_kop;
+var y3_kop;
+x1_kop_rad=(x1_kop*Math.PI)/180; 
+x2_kop_rad=(x2_kop*Math.PI)/180; 
+y1_kop=3*Math.pow(x1_kop,(6/8));
+y2_kop=2*Math.cos(x1_kop_rad)+3*Math.sin(x1_kop_rad);
+y3_kop=Math.pow(Math.pow(x1_kop,5)+2*Math.pow(x2_kop,4),1/3)*Math.abs(x1_kop-x2_kop);
+
+document.write("x1= "+a+"  &nbsp &nbsp &nbsp &nbsp &nbsp x2= "+b+"<br>"); 
+document.write("x1_r= "+x1_kop_rad.toFixed(2)+"  &nbsp &nbsp &nbsp &nbsp &nbsp x2_r= "+x2_kop_rad.toFixed(2)+"<br>"); 
+document.write("y1= "+y1_kop.toFixed(2)+"<br>"); 
+document.write("y2= "+y2_kop.toFixed(2)+"<br>"); 
+document.write("y1= "+y3_kop.toFixed(2)+"<br>"); 
+</script> 
+</div> 
+</body> 
+</html> 
