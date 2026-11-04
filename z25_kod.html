@@ -1,0 +1,29 @@
+ <html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+ <head>
+ <title> proste obliczenia</title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<div style="color:blue;font-size:50px;"> 
+ <script language="JavaScript">
+var No_kop=parseFloat(prompt("podaj sztuki [No] =",""));
+var t_kop=parseFloat(prompt("podaj czas [t] w latach =",""));
+var T_1_2_kop=parseFloat(prompt("Podaj czas polowicznego rozpadu [T_1_2] = ",""));
+ document.write("[N0] ="+No_kop+"[sztuk]<br><br>");
+ document.write("[t] ="+t_kop+"[lat]<br><br>");
+ document.write(" [T_1_2] ="+T_1_2_kop+"[lat]<br><br>");
+var lambda_kop=Math.LN2/T_1_2_kop;
+var N_kop=No_kop-lambda_kop;
+ document.write("Lambda ="+lambda_kop.toFixed(7)+"[1/rok]<br><br>");
+ document.write("N ="+N_kop.toFixed(7)+"[sztuk]<br><br>");
+
+ </script>
+</div> 
+</body>
+</html>
+    </textarea> 
+    </body> 
+</html> 
