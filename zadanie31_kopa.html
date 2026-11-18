@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 31 – Kopacz</title>
+</head>
+<body bgcolor="yellow">
+<div style="color:red;font-size:44px;">
+<script type="text/javascript">
+var mebel = {
+    rodzaj: 'szafa',
+    kolor: 'brązowy',
+    szerokość_mebla: '0,5 metra',
+
+    mebel_pokaz_kopacz: function() {
+
+        document.write("Dane obiektu rodzaj kolor<br>");
+        document.write("Moje dane ==> "+this.rodzaj+" "+this.kolor);
+    }
+}
+mebel.mebel_pokaz_kopacz();
+mebel.kolor="niebieski";
+mebel.wypisz1_kopacz=function()
+{
+    alert("Kolor: "+this.kolor);
+}
+mebel.wypisz1_kopacz();
+mebel.wypisz2_kopacz();
+</script>
+</div>
+<br>
+<div style="color:blue;font-size:46px;">
+<br>
+Mój nr. 7 i moje dane to:<br>
+Obiekt to mebel<br>
+pola:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rodzaj<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kolor<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;szerokość_mebla<br>
+metoda:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mebel_pokaz_kopacz();<br>
+========================================<br>
+nowe pole to kolor dla obiektu mebel wartosc pola to 'niebieski'<br>
+nowa definicja metody to wypisz_kopacz();<br>
+ z użyciem alert();<br>
+użycie metody wypisz_kopacz();
+</div>
+</body>
+</html>
