@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title size="2xl">Zadanie 32 – Kopacz</title>
+ </head>
+<body bgcolor="yellow">
+ <div style="color:green;font-size:39px;">
+ <script type="text/javascript">
+ function mebel(rodzaj_kop,kolor_kop,szerokość_mebla_kop)
+{
+this.rodzaj=rodzaj_kop;
+this.kolor=kolor_kop;
+this.szerokość_mebla=szerokość_mebla_kop;
+} 
+ mebel.prototype.wypisz = function () 
+ {
+ alert(this.rodzaj + " " + this.kolor+ " " + this.szerokość_mebla);
+ };
+var mebel_jeden = new mebel("biurko", "białe", "0,75 metra");
+var mebel_dwa = new mebel("łóżko", "Czerwone ", "2 metry"); 
+mebel_jeden.wypisz(); 
+mebel_dwa.wypisz(); 
+ document.write("Moje nazwisko to Kopacz nr. 7 a obiekt to mebel"+"<br>");
+ document.write("dostęp do pól mebel_jeden i mebel_dwa"+"<br>");
+ document.write("czyli wypisanie danych"+"<br>");
+
+document.write("mebel pierwszy =>"+" "+mebel_jeden.rodzaj+" "+mebel_jeden.kolor+" "+mebel_jeden.szerokość_mebla+"<br>");
+document.write("mebel drugi =>"+" "+mebel_dwa.rodzaj+" "+mebel_dwa.kolor+" "+mebel_dwa.szerokość_mebla+"<br>");
+ </script>
+</div>
+<div style="color:blue;font-size:41px;"><br>
+programowanie obiektowe:
+Słowo kluczowe prototype stosowane jest do:<br>
+stosowany przede wszystkim do realizowania dziedziczenia oraz współdzielenia metod i właściwości pomiędzy wieloma obiektami.<br>
+Słowo kluczowe new stosowane jest do:<br>
+służy do tworzenia nowych instancji obiektów na podstawie funkcji konstruktora lub klasy <br>
+</div>
+</body>
+</html>
